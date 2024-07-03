@@ -75,6 +75,11 @@ filterless-cook food -p "Your custom prompt here"
 filterless-cook food -f /path/to/save/recipe.tex
 ```
 
+**-m, --measurement MEASUREMENT**: Specify the type of measurement to be used in the recipes. Choose either 'metric' or 'imperial'. The default is 'metric'.
+```
+filterless-cook food -m imperial
+```
+
 **--debug**: Enable debug logging to see detailed log output.
 ```
 filterless-cook food --debug
@@ -85,7 +90,7 @@ filterless-cook food --debug
 To generate a chocolate cake recipe with a custom prompt and save it to `chocolate_cake.tex` with debug logging enabled:
 
 ```
-filterless-cook "chocolate cake" -p "Create a rich and moist chocolate cake recipe." -f chocolate_cake.tex --debug
+filterless-cook "chocolate cake" -p "You are an expert baker with special experience in european cakes." -f chocolate_cake.tex --debug
 ```
 
 ---
