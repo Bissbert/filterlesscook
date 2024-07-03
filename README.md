@@ -48,6 +48,8 @@ To install the FilterlessCook package, follow the instructions below:
 pip install filterlesscook
 ```
 
+If you want to use a specific version of the "dolphin-mixtral" model please preinstall, otherwise the tool will attempt to pull the newest version if none is already installed.
+
 ### Usage
 
 To generate food recipes formatted as LaTeX using the `filterless-cook` command line tool, follow the instructions below:
