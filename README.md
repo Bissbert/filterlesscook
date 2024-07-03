@@ -15,10 +15,15 @@
   <summary>Table of Contents</summary><br>
 
 - [ Overview](#overview)
+- [ Getting Started](#getting-started)
+    - [ Installation](#installation)
+    - [ Usage](#usage)
+        - [ Basic Usage](#basic-usage)
+        - [ Options](#options)
+        - [ Example](#example)
 - [ Features](#features)
 - [ Repository Structure](#repository-structure)
 - [ Modules](#modules)
-- [ Getting Started](#getting-started)
 - [ License](#license)
 </details>
 <hr>
@@ -26,6 +31,62 @@
 ##  Overview
 
 FilterlessCook is an innovative open-source Python package that streamlines recipe generation by eliminating the need for prefilters, offering a unique approach to data processing. This projects central module, `filterlesscook.py`, utilizes the ollama library and an AI assistant model for creating LaTeX-formatted recipes based on user prompts. With a focus on developer productivity, FilterlessCook allows developers to quickly create and save custom LaTeX documents using a single command, operating in an alpha stage under the MIT license. By using the FilterlessCook package, users can efficiently generate personalized food recipes without worrying about complicated setup or licensing issues.
+
+---
+
+##  Getting Started
+
+**System Requirements:**
+
+* **Python**: `version 3.6+`
+
+### Installation
+
+To install the FilterlessCook package, follow the instructions below:
+
+```sh
+pip install filterlesscook
+```
+
+### Usage
+
+To generate food recipes formatted as LaTeX using the `filterless-cook` command line tool, follow the instructions below:
+
+#### Basic Usage
+```
+filterless-cook food
+```
+Replace `food` with the name of the food or product you want the recipe for.
+
+#### Options
+
+**-h, --help**: Show the help message and exit.
+```
+filterless-cook -h
+```
+
+**-p PROMPT, --prompt PROMPT**: Use a user-defined prompt for recipe generation.
+```
+filterless-cook food -p "Your custom prompt here"
+```
+
+**-f FILE, --file FILE**: Save the generated LaTeX document to the specified file path.
+```
+filterless-cook food -f /path/to/save/recipe.tex
+```
+
+**--debug**: Enable debug logging to see detailed log output.
+```
+filterless-cook food --debug
+```
+
+#### Example
+
+To generate a chocolate cake recipe with a custom prompt and save it to `chocolate_cake.tex` with debug logging enabled:
+
+```
+filterless-cook "chocolate cake" -p "Create a rich and moist chocolate cake recipe." -f chocolate_cake.tex --debug
+```
 
 ---
 
@@ -68,12 +129,6 @@ FilterlessCook is an innovative open-source Python package that streamlines reci
 </details>
 
 ---
-
-##  Getting Started
-
-**System Requirements:**
-
-* **Python**: `version 3.6+`
 
 ##  License
 
